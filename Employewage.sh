@@ -6,3 +6,8 @@ echo "Employee is Present"
 else
 echo "Employe is Absent"
 fi
+
+echo "Enter the hours worked"
+read a
+b=$(($a*20))
+echo $b
