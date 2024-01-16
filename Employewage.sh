@@ -1,13 +1,17 @@
-isPresent=1
-checkAttendence=$((RANDOM%2))
-if [ $isPresent -eq $checkAttendence ]
-then
-echo "Employee is Present"
-else
-echo "Employe is Absent"
-fi
+echo "Enter Employe ID"
+read id
 
-echo "Enter the hours worked"
-read a
-b=$(($a*20))
-echo $b
+case $id in
+1)
+echo "Present"
+;;
+2)
+echo "Absent"
+;;
+3)
+echo "Present"
+;;
+4)
+echo "Absent"
+;;
+esac
